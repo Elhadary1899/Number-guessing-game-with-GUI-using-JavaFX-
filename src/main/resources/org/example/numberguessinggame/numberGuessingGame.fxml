@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #0077b6;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.numberguessinggame.NumberGuessingGameController">
+   <children>
+      <Label layoutX="67.0" layoutY="144.0" text="Welcome to the number guessing game!" textFill="#caf0f8">
+         <font>
+            <Font name="AQIRA" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="194.0" text="You must guess a number from 1 to 10" textFill="#caf0f8">
+         <font>
+            <Font name="AQIRA" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="272.0" text="Please choose a level" textFill="#caf0f8">
+         <font>
+            <Font name="AQIRA" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="275.0" layoutY="320.0" prefHeight="200.0" prefWidth="150.0" spacing="20.0">
+         <children>
+            <Button fx:id="level1" mnemonicParsing="false" onAction="#level1" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: #edf2f4;" text="Level 1 with 3 trials" textFill="#03045e">
+               <font>
+                  <Font name="AQIRA" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="level2" mnemonicParsing="false" onAction="#level2" prefHeight="29.0" prefWidth="152.0" style="-fx-background-color: #edf2f4;" text="Level 2 with 2 trials" textFill="#03045e">
+               <font>
+                  <Font name="AQIRA" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="level3" mnemonicParsing="false" onAction="#level3" prefHeight="29.0" prefWidth="159.0" style="-fx-background-color: #edf2f4;" text="Level 3 with 1 trial" textFill="#03045e">
+               <font>
+                  <Font name="AQIRA" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
